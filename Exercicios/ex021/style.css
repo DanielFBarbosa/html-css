@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(170, 188, 238);
+    margin: 0px;
+}
+
+header {
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin: 10px;   
+}
+
+nav {
+    background-color:rgb(135, 150, 155);
+    padding: 3px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+   
+
+}
+
+nav > a {
+    margin: auto;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold; 
+
+    margin: 30px; 
+
+}
+
+nav a:hover {
+    text-decoration:underline;
+    color: rgb(47, 50, 224);
+}
+
+main {
+    background-color: white;
+    padding-left: 10px;
+    margin: 10px;
+    border-radius:7px;
+}
+
+#assuntos {
+    padding-top:2px;
+}
+
+.esportes {
+    background-color: rgb(134, 170, 180);
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 30px;
+    marg
+    
+}
+
+article {
+    background-color:lightgray;
+}
+
+article>aside {
+    background-color: rgb(165, 165, 165);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:4px;
+    margin: 0px;
+}
+
+footer > p {
+    margin: 0px;
+}
