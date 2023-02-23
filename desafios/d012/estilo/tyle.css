@@ -4,10 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
 :root {
   --fonte1: Verdana, Geneva, Tahoma, sans-serif;
   --fonte2: 'Passion One', cursive;
   --fonte3: 'Sriracha', cursive;
+  --fonte4: 'Tangerine', cursive;
 }
 
 *{
@@ -18,21 +21,22 @@
 
 html, body {
     min-height: 100vh;
-    background-color: darkgray;
+    background-color:rgb(225, 199, 136);
     font-family: var(--fonte1);
 }
 
 header {
-    background-color: black;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), #ffb12b);
     color: white;
     text-align: center;
 }
 
 header > h1 {
     padding-top: 50px;
-   font-variant: small-caps;
-   font-family: var(--fonte2);
-   font-size: 8vw;
+  /* font-variant: small-caps;*/
+   font-family: var(--fonte4);
+   font-size: 9vw;
+   text-shadow: 2px 2px 6px  rgba(0, 0, 0, 0.718);
 }
 
 header > p {
@@ -40,7 +44,7 @@ header > p {
 }
 
 header a, footer a {
-    color: white;
+    color:;
     text-decoration: none;
     font-weight: bolder;
 }
@@ -58,14 +62,21 @@ section {
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-top: 2em;
+}
+
 section.normal {
-    background-color:white;
+    background-color:rgb(253, 249, 243);
     color:black;
 }
 
 section.imagem {
     background-color: rgb(59, 55, 55);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
@@ -74,8 +85,21 @@ section.imagem > p {
     background-color: rgba(0, 0, 0, 0.286);
 }
 
+section#img01 {
+  background-image: url(../imagens/borboleta.jpg);
+  background-position: right ;
+  text-shadow: 1px 1px 0px ;
+ 
+}
+
+section#img02 {
+background-image: url(../imagens/folha-de-papel.jpg);
+text-shadow: 1px 1px 0px ;
+
+}
+
 footer {
-    background-color: black;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), #ffb12b);
     color: white;
     text-align: center;
     padding: 10px;
