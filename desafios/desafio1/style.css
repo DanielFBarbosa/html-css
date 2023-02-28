@@ -8,15 +8,16 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
-    background-color: #00ff00;
+    background-image: url(imagens/background3.jpg);
+    background-repeat:no-repeat;
 }
 .form-box{
     position: relative;
     width: 400px;
     height: 450px;
-    background:red;
+    background:rgba(5, 37, 41, 0.253);
     justify-content: center;
     align-items: center;
 }
@@ -24,18 +25,19 @@ h2{
     font-size: 2em;
     color: #fff;
     text-align: center;
+    text-shadow: 4px 4px 4px orange;
 }
-.inputbox{
+.input-box{
     position:relative;
     margin: 30px 0;
     width: 310px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #d16207e3;
 }
-.inputbox label{
-    position: absolute;
+.input-box label{
+    position:relative;
     top: 50%;
     left: 5px;
-    transform: translateY(-50%);
+    transform: translate(-50%);
     color: #fff;
     font-size: 1em;
     pointer-events: none;
@@ -45,17 +47,17 @@ input:focus ~ label,
 input:valid ~ :valid{
     top: -5px;
 }
-.inputbox input{
+.input-box input{
     width: 100%;
     height: 50px;
-    background: transparent;
+    background:transparent;
     border: none;
     outline: none;
     font-size: 1em;
     padding: 0 35px 0 5px;
     color: #fff;
 }
-.inputbox ion-icon{
+.input-box ion-icon{
     position: absolute;
     right: 8px;
     color: #fff;
@@ -65,7 +67,7 @@ input:valid ~ :valid{
 .forget{
     margin: -15px 0 15px;
     font-size: .9em;
-    color: #fff;
+    color: #ffffff;
     display: flex;
     justify-content: center;
 }
@@ -78,17 +80,23 @@ input:valid ~ :valid{
 }
 .forget label a:hover{
     text-decoration: underline;
+    color: rgba(236, 104, 9, 0.76);
 }
 button{
     width: 100%;
     height: 40px;
-    border-radius: 40px;
-    background: #fff;
+    border-radius: 10px;
+    background: #df790457;
+    color: #fff;
     border: none;
-    outline: none;
+    outline: ;
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
+}
+button:hover {
+    background-color: rgba(236, 104, 9, 0.76);
+    
 }
 .register {
     font-size: .9em;
@@ -98,7 +106,7 @@ button{
 }
 .register p a{
     text-decoration: none;
-    color: #fff;
+    color: rgba(236, 104, 9, 0.76);
     font-weight: 600;
 }
 .register p a:hover{
